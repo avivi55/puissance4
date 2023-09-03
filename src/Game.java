@@ -7,13 +7,12 @@ public class Game {
 
     public static void main(String[] args) {
         Board board = new Board(7, 6);
-        boolean game = true;
 
         Scanner scanner = new Scanner(System.in);
 
         boolean isPlayer1 = true;
 
-        while (game){
+        while (true){
             System.out.println("Player : " + new ColoredText(token, isPlayer1 ? player1color : player2color));
             System.out.println("Enter column");
             int column = scanner.nextInt();
@@ -33,7 +32,5 @@ public class Game {
 
             isPlayer1 = !isPlayer1;
         }
-
-        System.out.println("DRAW!");
     }
 }

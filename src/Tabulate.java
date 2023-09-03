@@ -1,6 +1,6 @@
 public class Tabulate {
-    private int finalWidth;
-    private Object[][] data;
+    private final int finalWidth;
+    private final Object[][] data;
 
     private boolean showIndexes = false;
 
